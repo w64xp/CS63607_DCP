@@ -1,6 +1,6 @@
-int redPin = 2;
-int greenPin = 3;
-int bluePin = 4;
+int redPin = 15;
+int greenPin = 18;
+int bluePin = 22;
 
 String command = "";
 
