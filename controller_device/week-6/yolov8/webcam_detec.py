@@ -505,8 +505,10 @@ class YoloCardController(QWidget):
             self.stable_count >= STABLE_FRAMES
             and stable_value != self.last_sent
         ):
-            if stable_value in ("RED", "GREEN", "YELLOW"):
+            if stable_value in ("RED", "GREEN", "YELLOW" , "BLINK"):
                 self.send_command(stable_value)
+            else:
+                self.send_command("OFF")
 
             self.last_sent = stable_value
 

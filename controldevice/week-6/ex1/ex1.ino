@@ -34,6 +34,25 @@ void loop() {
       digitalWrite(bluePin, HIGH);
       Serial.println("Blue ON");
     } 
+    // else if (command == "YELLOW") {
+    //   while (Serial.available() == 0) {
+
+    //     allOff();
+    //     // กระพริบ 2 ครั้ง
+    //     for (int i = 0; i < 2; i++) {
+    //       digitalWrite(redPin, HIGH);
+    //       digitalWrite(greenPin, HIGH);
+    //       digitalWrite(bluePin, HIGH);
+    //       delay(150);
+    //       digitalWrite(redPin, LOW);
+    //       digitalWrite(greenPin, LOW);
+    //       digitalWrite(bluePin, LOW);
+    //       delay(150);
+    //     }
+        // ดับ 5 วินาที
+        // delay(150);
+    //   }
+    // } 
     else if (command == "OFF") {
       allOff();
       Serial.println("All OFF");
